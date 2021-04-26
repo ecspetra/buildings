@@ -1,0 +1,79 @@
+.advantages-container {
+  color: #081421;
+  padding: 100px 40px 0px 40px;
+}
+.advantages-container .advantages__headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 80px 0px;
+}
+.advantages-container .advantages__headline .headline {
+  margin: 0px 0px 20px 0px;
+}
+.advantages-container .advantages__headline .headline span {
+  color: #2454e0;
+}
+.advantages-container .advantages__headline .description {
+  color: #6c7f93;
+  font-size: 24px;
+}
+.advantages-container .advantages__headline .divider {
+  width: 80px;
+  height: 5px;
+  background-color: #2454e0;
+  margin: 70px 0px 0px 0px;
+}
+.advantages-container .advantages-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.advantages-container .advantages-items .advantages__item {
+  flex: 1 1 32%;
+  background-color: #f4faff;
+  padding: 30px;
+  border-radius: 4px;
+  text-align: left;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.advantages-container .advantages-items .advantages__item .advantages__item__icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages-container .advantages-items .advantages__item .advantages__item__icon svg {
+  width: 60px;
+  height: 60px;
+}
+.advantages-container .advantages-items .advantages__item .advantages__item__headline {
+  font-weight: 900;
+  font-size: 26px;
+  margin: 25px 0px 15px 0px;
+}
+.advantages-container .advantages-items .advantages__item .advantages__item__description {
+  color: #6c7f93;
+  font-size: 18px;
+}
+.advantages-container .advantages-items .advantages__item:hover {
+  background-color: #2454e0;
+  color: white;
+}
+.advantages-container .advantages-items .advantages__item:hover .advantages__item__description {
+  color: white;
+}
+.advantages-container .advantages-items .advantages__item:hover .advantages__item__icon > svg * {
+  fill: white;
+}
+
+/*# sourceMappingURL=advantages.css.map */

@@ -1,0 +1,78 @@
+.footer-container {
+  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.8) 100%), url("../img/projects-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  color: white;
+  padding: 100px 40px 30px 40px;
+}
+.footer-container .footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+.footer-container .footer .footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 100px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+.footer-container .footer .footer__content .footer__content__headline span {
+  color: #286cf5;
+}
+.footer-container .footer .footer__content .footer__content__paragraph {
+  margin: 30px 0px 70px 0px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  max-width: 800px;
+  letter-spacing: 2px;
+}
+.footer-container .footer .footer__additional-info {
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container .footer .footer__additional-info .footer__additional-info__author {
+  flex: 1 1 300px;
+  opacity: 0.5;
+}
+.footer-container .footer .footer__additional-info .footer__additional-info__logo {
+  opacity: 0.5;
+}
+.footer-container .footer .footer__additional-info .footer__additional-info__logo svg {
+  width: auto;
+  height: 32px;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 300px;
+}
+.footer-container .footer .footer__additional-info .footer__additional-info__social-icons {
+  flex: 1 1 300px;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.footer-container .footer .footer__additional-info .footer__additional-info__social-icons .social-item a i {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
+  font-size: 32px;
+}
+
+.social-item:hover a i {
+  opacity: 1 !important;
+}
+
+/*# sourceMappingURL=footer.css.map */

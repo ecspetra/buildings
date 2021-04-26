@@ -1,0 +1,110 @@
+.hero-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+.hero-container .hero-slide-1 {
+  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.8) 100%), url("../img/hero-bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-container .hero-slide-2 {
+  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.8) 100%), url("../img/hero-bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-container .hero-slide-3 {
+  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.8) 100%), url("../img/hero-bg-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-container .hero-slider {
+  position: relative;
+  margin-bottom: 0px !important;
+}
+.hero-container .hero-slider .slick-list .slick-track .slick-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+.hero-container .hero-slider .slick-list .slick-track .slick-slide .slide-content {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+}
+.hero-container .hero-slider .slick-list .slick-track .slick-slide .slide-content h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 66px;
+  font-weight: 900;
+}
+.hero-container .hero-slider .slick-list .slick-track .slick-slide .slide-content h1 span {
+  color: #286cf5;
+}
+.hero-container .hero-slider .slick-list .slick-track .slick-slide .slide-content .paragraph {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 40px auto 70px auto;
+  max-width: 600px;
+  letter-spacing: 2px;
+}
+.hero-container .hero-slider .slick-list .slick-track .slick-slide .slide-content .cta-button {
+  margin: 0 auto;
+}
+.hero-container .hero-slider .hero-dots {
+  position: absolute;
+  top: 75%;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.hero-container .hero-slider .hero-dots li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8px;
+  height: 8px;
+  margin: 20px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.hero-container .hero-slider .hero-dots li button {
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  color: transparent;
+  outline: none;
+  background-color: white;
+  opacity: 0.3;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hero-container .hero-slider .hero-dots .slick-active button {
+  border-radius: 4px;
+  background: white;
+  width: 24px;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=hero.css.map */

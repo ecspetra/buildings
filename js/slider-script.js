@@ -7,5 +7,18 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     dots: true,
     infinite: true,
+    dotsClass: "hero-dots",
+  });
+  $(".gallery__slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    infinite: true,
+    dotsClass: "gallery-dots",
+    focusOnSelect: true,
   });
 });

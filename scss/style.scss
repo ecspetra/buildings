@@ -1,4 +1,4 @@
-$basic-color: blue;
+@import "tmp.scss";
 
 *,
 *::before,
@@ -34,6 +34,13 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 ul[class],
@@ -85,120 +92,19 @@ select {
   padding: 100px 40px;
 }
 
-.hero-container {
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
-  color: white;
-  text-align: center;
-
-  .slide-1 {
-    background-image: linear-gradient(
-        to right,
-        rgba(9, 5, 47, 0.85) 0%,
-        rgba(49, 29, 94, 0.85) 100%
-      ),
-      url("../img/hero-bg-1.jpg");
-
-    background-size: cover;
-  }
-  .slide-2 {
-    background-image: linear-gradient(
-        to right,
-        rgba(9, 5, 47, 0.85) 0%,
-        rgba(49, 29, 94, 0.85) 100%
-      ),
-      url("../img/hero-bg-2.jpg");
-
-    background-size: cover;
-  }
-  .slide-3 {
-    background-image: linear-gradient(
-        to right,
-        rgba(9, 5, 47, 0.85) 0%,
-        rgba(49, 29, 94, 0.85) 100%
-      ),
-      url("../img/hero-bg-3.jpg");
-
-    background-size: cover;
-  }
-
-  .slick-slider {
-    .slick-list {
-      .slick-track {
-        .slick-slide {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 900px;
-
-          .slide-content {
-            flex-direction: column;
-            justify-content: center;
-            max-width: 800px;
-
-            h1 {
-              font-size: 60px;
-              text-transform: uppercase;
-              line-height: 66px;
-            }
-
-            .paragraph {
-              font-size: 24px;
-              line-height: 28px;
-              margin: 20px 0px 70px 0px;
-            }
-
-            .cta-button {
-              margin: 0 auto;
-            }
-          }
-        }
-      }
-    }
-  }
+.headline {
+  font-size: $biggest-headline-fs;
+  line-height: $biggest-headline-lh;
+  font-weight: 900;
 }
 
-.advantages-container {
-  .advantages {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    .advantages__item {
-      flex: 0 0 33%;
-    }
-  }
-}
+@import "hero.scss";
+@import "advantages.scss";
+@import "about-company.scss";
+@import "projects.scss";
+@import "gallery.scss";
+@import "contacts.scss";
+@import "footer.scss";
 
-.about-company-container {
-  .about-company {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    .about-company__image {
-      width: 600px;
-      height: 600px;
-    }
-
-    .about-company__description {
-      .about-company__description__headline {
-      }
-      .about-company__description__paragraph {
-      }
-    }
-  }
-}
-
-.cta-button {
-  background-color: $basic-color;
-  display: block;
-  padding: 20px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  max-width: 240px;
-  text-align: center;
-}
+@import "elements.scss";
+@import "map.scss";

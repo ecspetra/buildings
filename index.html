@@ -1,168 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <script
-      src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-      crossorigin="anonymous"
-    ></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="wrapper__container hero-container">
-        <div class="hero-slider">
-          <div class="slide-1">
-            <div class="slide-content">
-              <h1>The perfect solution for your business</h1>
-              <div class="paragraph">
-                Our strategy includes consistently evolving to ensure
-                exceptional for business.
-              </div>
-              <a href="index.html" class="cta-button">Get it now</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper__container hero-container">
+      <div class="hero-slider">
+        <div class="hero-slide-1">
+          <div class="slide-content">
+            <h1>The perfect solution for your business</h1>
+            <div class="paragraph">
+              Our strategy includes consistently evolving to ensure
+              exceptional for business.
             </div>
-          </div>
-          <div class="slide-2">
-            <div class="slide-content">
-              <h1>We have more than about 20+ years experience</h1>
-              <div class="paragraph">
-                Our strategy includes consistently evolving to ensure
-                exceptional for business.
-              </div>
-              <a href="index.html" class="cta-button">Get it now</a>
-            </div>
-          </div>
-          <div class="slide-3">
-            <div class="slide-content">
-              <h1>Custom Project For Your Business</h1>
-              <div class="paragraph">
-                Our strategy includes consistently evolving to ensure
-                exceptional for business.
-              </div>
-              <a href="index.html" class="cta-button">Get it now</a>
-            </div>
+            <button class="cta-button contact-button">Contact us now</button>
           </div>
         </div>
-      </div>
-      <div class="wrapper__container advantages-container">
-        <div class="advantages">
-          <div class="advantages__item">
-            <div class="advantages__item__icon"></div>
-            <div class="advantages__item__headline">IT Solutions</div>
-            <div class="advantages__item__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit
+        <div class="hero-slide-2">
+          <div class="slide-content">
+            <h1>More than about 20+ years experience</h1>
+            <div class="paragraph">
+              Our strategy includes consistently evolving to ensure
+              exceptional for business.
             </div>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__item__icon"></div>
-            <div class="advantages__item__headline">IT Solutions</div>
-            <div class="advantages__item__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </div>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__item__icon"></div>
-            <div class="advantages__item__headline">IT Solutions</div>
-            <div class="advantages__item__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </div>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__item__icon"></div>
-            <div class="advantages__item__headline">IT Solutions</div>
-            <div class="advantages__item__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </div>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__item__icon"></div>
-            <div class="advantages__item__headline">IT Solutions</div>
-            <div class="advantages__item__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </div>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__item__icon"></div>
-            <div class="advantages__item__headline">IT Solutions</div>
-            <div class="advantages__item__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </div>
+            <button class="cta-button contact-button">Contact us now</button>
           </div>
         </div>
-      </div>
-      <div class="wrapper__container about-company-container">
-        <div class="about-company">
-          <div class="about-company__image"></div>
-          <div class="about-company__description">
-            <div class="about-company__description__headline headline">
-              Our company
+        <div class="hero-slide-3">
+          <div class="slide-content">
+            <h1>Custom Project For Your Business</h1>
+            <div class="paragraph">
+              Our strategy includes consistently evolving to ensure
+              exceptional for business.
             </div>
-            <div class="about-company__description__paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              natus nesciunt animi eligendi ipsa quas ratione voluptate earum
-              velit mollitia veniam laboriosam eos facilis in sit similique,
-              sunt perspiciatis. Beatae!
-            </div>
+            <button class="cta-button contact-button">Contact us now</button>
           </div>
         </div>
-      </div>
-      <div class="wrapper__container projects-container">
-        <div class="projects">
-          <div class="projects__headline headline"></div>
-          <div class="projects__description"></div>
-          <a href="index.html" class="cta-button">Get it now</a>
-        </div>
-      </div>
-      <div class="wrapper__container gallery-container">
-        <div class="gallery__headine headline"></div>
-        <div class="gallery__slider">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-      <div class="wrapper__container contacts-container">
-        <div class="contacts">
-          <div class="contacts__text-block">
-            <div class="contacts__text-block__headline headline"></div>
-            <div class="contacts__text-block__phone"></div>
-            <div class="contacts__text-block__mail"></div>
-            <div class="contacts__text-block__social-icons">
-              <div class="social-icon"><a href=""></a></div>
-              <div class="social-icon"><a href=""></a></div>
-              <div class="social-icon"><a href=""></a></div>
-              <div class="social-icon"><a href=""></a></div>
-            </div>
-          </div>
-          <div class="contacts__form-block">
-            <form>
-              <input type="name" name="" id="" />
-              <input type="email" name="" id="" />
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-              <button type="submit">Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper__container map-container">
-        <div class="map"></div>
-      </div>
-      <div class="wrapper__container footer-container">
-        <div class="footer"></div>
       </div>
     </div>
+    <div class="wrapper__container advantages-container">
+      <div class="advantages__headline">
+        <div class="headline">Our <span>Advantages</span></div>
+        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+        <div class="divider"></div>
+      </div>
+      <div class="advantages-items">
+        <div class="advantages__item">
+          <div class="advantages__item__icon"><svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512"
+              height="512" x="0" y="0" viewBox="0 0 206.738 206.738" style="enable-background:new 0 0 512 512"
+              xml:space="preserve" class="">
+              <g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M135.326,63.912H71.413c-4.143,0-7.5,3.357-7.5,7.5v63.914c0,4.143,3.358,7.5,7.5,7.5h63.913c4.143,0,7.5-3.357,7.5-7.5   V71.412C142.826,67.27,139.469,63.912,135.326,63.912z M127.826,127.826H78.913V78.912h48.913V127.826z"
+                    fill="#2454e0" data-original="#000000" style="" class="" />
+                  <path
+                    d="M199.238,110.869c4.143,0,7.5-3.357,7.5-7.5s-3.357-7.5-7.5-7.5h-24.455V78.912h24.455c4.143,0,7.5-3.357,7.5-7.5   c0-4.143-3.357-7.5-7.5-7.5h-24.455V39.455c0-4.143-3.357-7.5-7.5-7.5h-24.457V7.5c0-4.143-3.357-7.5-7.5-7.5   c-4.143,0-7.5,3.357-7.5,7.5v24.455h-16.957V7.5c0-4.143-3.357-7.5-7.5-7.5s-7.5,3.357-7.5,7.5v24.455H78.913V7.5   c0-4.143-3.357-7.5-7.5-7.5c-4.143,0-7.5,3.357-7.5,7.5v24.455H39.456c-4.143,0-7.5,3.358-7.5,7.5v24.457H7.5   c-4.143,0-7.5,3.357-7.5,7.5c0,4.143,3.357,7.5,7.5,7.5h24.456v16.957H7.5c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5h24.456   v16.957H7.5c-4.143,0-7.5,3.357-7.5,7.5c0,4.143,3.357,7.5,7.5,7.5h24.456v24.457c0,4.143,3.357,7.5,7.5,7.5h24.457v24.455   c0,4.143,3.358,7.5,7.5,7.5c4.143,0,7.5-3.357,7.5-7.5v-24.455h16.956v24.455c0,4.143,3.357,7.5,7.5,7.5s7.5-3.357,7.5-7.5v-24.455   h16.957v24.455c0,4.143,3.357,7.5,7.5,7.5c4.143,0,7.5-3.357,7.5-7.5v-24.455h24.457c4.143,0,7.5-3.357,7.5-7.5v-24.457h24.455   c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5h-24.455v-16.957H199.238z M159.783,159.783H46.956V46.955h112.827V159.783z"
+                    fill="#2454e0" data-original="#000000" style="" class="" />
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+              </g>
+            </svg></div>
+          <div class="advantages__item__headline">IT Solutions</div>
+          <div class="advantages__item__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item__icon"><svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512"
+              height="512" x="0" y="0" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 512 512"
+              xml:space="preserve" class="">
+              <g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="M494.98,19.107H75.136c-9.399,0-17.02,7.62-17.02,17.02v132.836H17.02c-9.399,0-17.02,7.62-17.02,17.02v289.89    c0,9.399,7.62,17.02,17.02,17.02h161.622c9.399,0,17.02-7.62,17.02-17.02V344.343h43.491v23.731h-1.507    c-9.4,0-17.02,7.62-17.02,17.02s7.62,17.02,17.02,17.02h94.822c9.399,0,17.02-7.62,17.02-17.02s-7.62-17.02-17.02-17.02h-1.506    v-23.731h164.017c9.399,0,17.02-7.62,17.02-17.02V36.126C512,26.727,504.38,19.107,494.98,19.107z M161.62,458.854H34.04v-33.942    h46.58c-0.001,0.068-0.01,0.133-0.01,0.201c0,9.511,7.71,17.221,17.221,17.221c9.511,0,17.221-7.71,17.221-17.221    c0-0.068-0.009-0.133-0.01-0.201h46.58V458.854z M161.622,390.872H34.04V251.797h127.582V390.872z M161.622,217.756H34.04v-14.754    h127.582V217.756z M296.924,368.076h-23.731v-23.731h23.731V368.076z M477.959,310.305H313.943h-57.771h-60.511V285.51h282.298    V310.305z M477.96,251.47H195.661v-65.488c0-9.399-7.62-17.02-17.02-17.02H92.156V53.146H477.96V251.47z"
+                      fill="#2454e0" data-original="#000000" style="" class="" />
+                  </g>
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+              </g>
+            </svg></div>
+          <div class="advantages__item__headline">Full responsive</div>
+          <div class="advantages__item__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item__icon"><svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512"
+              height="512" x="0" y="0" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 512 512"
+              xml:space="preserve" class="">
+              <g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="M460.8,221.867H185.31c-9.255-36.364-46.237-58.34-82.602-49.085c-24.116,6.138-42.947,24.969-49.085,49.085H17.067    C7.641,221.867,0,229.508,0,238.934S7.641,256,17.067,256h36.557c9.255,36.364,46.237,58.34,82.602,49.085    c24.116-6.138,42.947-24.969,49.085-49.085H460.8c9.426,0,17.067-7.641,17.067-17.067S470.226,221.867,460.8,221.867z"
+                      fill="#2454e0" data-original="#000000" style="" class="" />
+                  </g>
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="M460.8,51.2h-53.623c-9.255-36.364-46.237-58.34-82.602-49.085C300.459,8.253,281.628,27.084,275.49,51.2H17.067    C7.641,51.2,0,58.841,0,68.267s7.641,17.067,17.067,17.067H275.49c9.255,36.364,46.237,58.34,82.602,49.085    c24.116-6.138,42.947-24.969,49.085-49.085H460.8c9.426,0,17.067-7.641,17.067-17.067S470.226,51.2,460.8,51.2z"
+                      fill="#2454e0" data-original="#000000" style="" class="" />
+                  </g>
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="M460.8,392.534h-87.757c-9.255-36.364-46.237-58.34-82.602-49.085c-24.116,6.138-42.947,24.969-49.085,49.085H17.067    C7.641,392.534,0,400.175,0,409.6s7.641,17.067,17.067,17.067h224.29c9.255,36.364,46.237,58.34,82.602,49.085    c24.116-6.138,42.947-24.969,49.085-49.085H460.8c9.426,0,17.067-7.641,17.067-17.067S470.226,392.534,460.8,392.534z"
+                      fill="#2454e0" data-original="#000000" style="" class="" />
+                  </g>
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+              </g>
+            </svg></div>
+          <div class="advantages__item__headline">Easy customize</div>
+          <div class="advantages__item__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item__icon"><svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512"
+              height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+              xml:space="preserve" class="">
+              <g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <g>
+                      <path
+                        d="M468.04,91.687l-205-90c-5.147-2.26-11.007-2.249-16.146,0.029l-203,90C36.663,94.922,32,102.089,32,110v158     c0,59.712,23.597,120.752,64.741,167.468c20.695,23.498,44.553,42.092,70.912,55.266C195.887,504.845,225.611,512,256,512     c42.552,0,83.967-13.773,119.769-39.829c8.931-6.5,10.902-19.009,4.402-27.94c-6.5-8.931-19.009-10.901-27.94-4.402     C323.313,460.875,290.037,472,256,472c-96.299,0-184-97.234-184-204V123.01l183.04-81.15L440,123.062V268     c0,36.829-10.58,74.1-30.597,107.782c-5.643,9.496-2.52,21.768,6.976,27.411c9.497,5.643,21.768,2.52,27.411-6.976     C467.479,356.354,480,312.018,480,268V110C480,102.064,475.307,94.878,468.04,91.687z"
+                        fill="#2454e0" data-original="#000000" style="" class="" />
+                      <path
+                        d="M351.385,157.503L227.379,312.451l-69.515-66.865c-7.961-7.657-20.622-7.412-28.279,0.549     c-7.657,7.961-7.412,20.622,0.549,28.279l70.485,67.798c0.028,0.027,0.057,0.054,0.085,0.082     c7.299,6.939,16.746,10.707,26.754,10.707c0.537,0,1.074-0.011,1.612-0.033c10.601-0.426,20.337-5.015,27.415-12.919     c0.246-0.275,0.484-0.557,0.715-0.845l125.415-156.708c6.902-8.624,5.505-21.21-3.118-28.112     C370.872,147.482,358.287,148.878,351.385,157.503z"
+                        fill="#2454e0" data-original="#000000" style="" class="" />
+                    </g>
+                  </g>
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+              </g>
+            </svg></div>
+          <div class="advantages__item__headline">Extreme security</div>
+          <div class="advantages__item__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item__icon"><svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512"
+              height="512" x="0" y="0" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 512 512"
+              xml:space="preserve" class="">
+              <g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="M488.55,107.399l-83.965-83.892C373.2-7.85,322.151-7.834,290.787,23.545L51.92,262.521    c-7.804,7.808-7.806,20.462-0.002,28.271l28,28.021L6.02,391.787c-3.803,3.756-5.945,8.879-5.946,14.224    c-0.001,5.345,2.138,10.468,5.938,14.227l86.986,85.986c3.896,3.851,8.978,5.775,14.059,5.775c5.118,0,10.236-1.954,14.141-5.857    l72.979-72.979l26.866,26.887c3.75,3.753,8.84,5.862,14.145,5.862c0.009,0,0.019,0,0.027,0c5.315-0.007,10.409-2.131,14.157-5.901    l167.823-168.877c7.785-7.834,7.745-20.495-0.089-28.279c-7.833-7.784-20.494-7.746-28.279,0.089L235.149,417.586l-28.379-28.402    l43.617-43.617c1.839,0.298,3.724,0.46,5.647,0.46c19.327,0,34.994-15.668,34.994-34.994c0-19.327-15.667-34.994-34.994-34.994    c-19.327,0-34.994,15.668-34.994,34.994c0,2.285,0.226,4.515,0.644,6.678l-43.182,43.182l-29.821-29.844l87.601-87.005h89.742    c5.366,0,10.508-2.157,14.269-5.986l37.968-38.665c2.187,0.428,4.443,0.658,6.754,0.658c19.327,0,34.994-15.667,34.994-34.994    s-15.667-34.994-34.994-34.994s-34.994,15.667-34.994,34.994c0,1.893,0.155,3.749,0.444,5.561l-32.83,33.433h-89.595    c-5.279,0-10.345,2.088-14.092,5.809l-93.536,92.899L94.335,276.66L319.074,51.817c15.777-15.784,41.458-15.792,57.246-0.019    l83.965,83.892c15.543,15.529,15.56,40.814,0.038,56.366c-7.802,7.816-7.79,20.478,0.026,28.279    c7.816,7.803,20.477,7.791,28.279-0.026C519.721,189.158,519.686,138.507,488.55,107.399z M108.173,347.118    c0.035,0.026,0.07,0.052,0.104,0.077l57.63,57.676l-58.932,58.934l-58.454-57.781L108.173,347.118z"
+                      fill="#2454e0" data-original="#000000" style="" class="" />
+                  </g>
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+              </g>
+            </svg></div>
+          <div class="advantages__item__headline">Free update</div>
+          <div class="advantages__item__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item__icon"><svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512"
+              height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+              xml:space="preserve" class="">
+              <g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <g>
+                      <path
+                        d="M236.5,441.122c11.046,0,20-8.954,20-20c0-11.046-8.954-20-20-20h-40c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20     H236.5z"
+                        fill="#2454e0" data-original="#000000" style="" class="" />
+                      <circle cx="236.5" cy="129.122" r="20" fill="#2454e0" data-original="#000000" style="" class="" />
+                      <path
+                        d="M373.5,317.122c-11.046,0-20,8.954-20,20V432c0,22.056-17.944,40-40,40h-194c-22.056,0-40-17.944-40-40V80     c0-22.056,17.944-40,40-40h13c11.046,0,20-8.954,20-20s-8.954-20-20-20h-13c-44.112,0-80,35.888-80,80v352     c0,44.112,35.888,80,80,80h194c44.112,0,80-35.888,80-80v-94.878C393.5,326.076,384.546,317.122,373.5,317.122z"
+                        fill="#2454e0" data-original="#000000" style="" class="" />
+                      <path
+                        d="M331.5,0.122h-40c-77.748,0-141,58.652-141,130.745c0,25.664,7.81,50.051,22.701,71.21l-21.243,52.549     c-3.051,7.546-1.224,16.189,4.621,21.855c3.81,3.694,8.828,5.642,13.926,5.642c2.723-0.001,5.469-0.556,8.063-1.7l62.32-27.472     c15.31,5.525,31.128,8.504,47.172,8.876c1.117,0.194,2.267,0.295,3.44,0.295h40c77.748,0,141-58.767,141-131v-0.255     C472.5,58.774,409.248,0.122,331.5,0.122z M432.5,131.122c0,50.178-45.309,91-101,91h-36.798     c-1.043-0.168-2.112-0.255-3.202-0.255c-14.719,0-29.257-3.019-43.21-8.972c-5.091-2.172-10.851-2.137-15.916,0.095     l-24.872,10.964l7.086-17.529c2.793-6.909,1.514-14.798-3.321-20.47c-13.586-15.94-20.767-34.988-20.767-55.088     c0-50.037,45.309-90.745,101-90.745h40c55.691,0,101,40.708,101,90.745V131.122z"
+                        fill="#2454e0" data-original="#000000" style="" class="" />
+                      <circle cx="387.5" cy="129.122" r="20" fill="#2454e0" data-original="#000000" style="" class="" />
+                      <circle cx="311.5" cy="129.122" r="20" fill="#2454e0" data-original="#000000" style="" class="" />
+                    </g>
+                  </g>
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                </g>
+              </g>
+            </svg></div>
+          <div class="advantages__item__headline">Live chat</div>
+          <div class="advantages__item__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </div>
+        </div>
+      </div>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/slider-script.js"></script>
-  </body>
+    </div>
+    <div class="wrapper__container about-company-container">
+      <div class="about-company">
+        <div class="scrollme">
+          <div class="animateme about-company__image-1" data-when="view" data-from="0.65" data-to="0.15"
+            data-translatex="-400" data-translatey="400" data-opacity="0">
+          </div>
+          <div class="animateme about-company__image-2" data-when="view" data-from="0.65" data-to="0.15"
+            data-translatex="400" data-translatey="400" data-opacity="0">
+          </div>
+        </div>
+        <div class="about-company__description">
+          <div class="about-company__description__headline headline">
+            Some info about the <span>team</span>
+          </div>
+          <div class="about-company__description__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            natus nesciunt animi eligendi ipsa quas ratione voluptate earum
+            velit mollitia veniam laboriosam eos facilis in sit similique,
+            sunt perspiciatis. Beatae!
+          </div>
+          <div class="more-info">
+            <a href="index.html">Read more<i class="fas fa-long-arrow-alt-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper__container projects-container">
+      <div class="projects">
+        <div class="projects__description">
+          <div class="projects__description__paragraph"><i class="fas fa-map-marker-alt"></i>New York City, United
+            States - 1776 feet</div>
+          <div class="projects__description__headline headline">See <span>examples</span> of our projects right now
+          </div>
+          <button class="cta-button">Get our examples</button>
+        </div>
+        <div class="scrollme">
+          <div class="animateme projects__img" data-when="view" data-from="0.65" data-to="0.15" data-translatex="300"
+            data-translatey="0" data-opacity="0"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper__container gallery-container">
+      <div class="gallery__headline headline">Projects <span>gallery</span></div>
+      <div class="gallery__slider">
+        <div class="gallery-slide-1"></div>
+        <div class="gallery-slide-2"></div>
+        <div class="gallery-slide-3"></div>
+        <div class="gallery-slide-4"></div>
+        <div class="gallery-slide-5"></div>
+        <div class="gallery-slide-6"></div>
+      </div>
+    </div>
+    <div class="wrapper__container contacts-container">
+      <div class="contacts">
+        <div class="contacts__img">
+          <div class="contacts__adress">Rue Pereire, 92500 Rueil-Malmaison, France</div>
+        </div>
+        <form class="contacts__form-block" name="contacts__form" action="handler.php" method="post">
+          <div class="contacts__form-block__headline headline"><span>Contact us</span> to discuss the details of your
+            project</div>
+          <div class="divider"></div>
+          <label for="name_input">Your name</label>
+          <input type="name" name="name" id="name_input" />
+          <label for="email_input">Your Email</label>
+          <input type="email" name="email" id="email_input" />
+          <button type="submit" class="cta-button submit-button">Send</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <div class="wrapper__container map-container" id="map">
+  </div>
+  <div class="wrapper__container footer-container">
+    <div class="footer">
+      <div class="footer__content">
+        <div class="footer__content__headline headline">Join us and get a <span>free trial</span></div>
+        <div class="footer__content__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+          laudantium minus facere consequuntur officia</div>
+        <button class="cta-button">Sign Up</button>
+      </div>
+      <div class="footer__additional-info">
+        <div class="footer__additional-info__author">&copy; 2021 ecsPetra</div>
+        <div class="footer__additional-info__logo"><svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 192.61 42.24">
+            <defs>
+              <style>
+                .cls-1,
+                .cls-2 {
+                  fill: #fff;
+                }
+
+                .cls-2 {
+                  font-size: 35.44px;
+                  stroke: #fff;
+                  stroke-miterlimit: 10;
+                  stroke-width: 1.3px;
+                  font-family: TTNorms-Regular, TT Norms;
+                }
+              </style>
+            </defs>
+            <path class="cls-1" d="M16.2,31.21h9.9v2.47H16.2Z" transform="translate(-0.04 -4)" />
+            <path class="cls-1" d="M16.2,26.26h9.9v2.47H16.2Z" transform="translate(-0.04 -4)" />
+            <path class="cls-1" d="M16.2,4h9.9v9.89H16.2Z" transform="translate(-0.04 -4)" />
+            <path class="cls-1" d="M16.2,16.37h9.9v2.47H16.2Z" transform="translate(-0.04 -4)" />
+            <path class="cls-1" d="M16.2,21.31h9.9v2.48H16.2Z" transform="translate(-0.04 -4)" />
+            <path class="cls-1"
+              d="M42.26,43.74H39.7V19.19l-5-1.65v26.2H32.28V9H28.57V43.74H26.1V36.15H16.2v7.59H13.73V9H10V43.74H7.55V17.54L2.6,19.19V43.74H0v2.47H42.26Z"
+              transform="translate(-0.04 -4)" /><text class="cls-2" transform="translate(47.62 33.78)">buildings</text>
+          </svg></div>
+        <div class="footer__additional-info__social-icons">
+          <div class="social-item">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/slider-script.js"></script>
+  <script type="text/javascript" src="js/anchors.js"></script>
+  <script type="text/javascript" src="scrollme-master/jquery.scrollme.js"></script>
+
+  <script src="leaflet/leaflet.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/map.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+
+</body>
+
 </html>
