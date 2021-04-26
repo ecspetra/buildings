@@ -35,6 +35,9 @@
   background-color: rgba(8, 20, 33, 0.9);
   font-size: 18px;
 }
+.contacts-container .contacts .contacts__img .contacts__adress i {
+  margin: 0px 10px 0px 0px;
+}
 .contacts-container .contacts .contacts__form-block {
   padding: 0px 70px;
   flex: 1 1 auto;

@@ -1,0 +1,99 @@
+.darkHeader {
+  background-color: #081421;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.active {
+  opacity: 1 !important;
+}
+.active :after {
+  display: block;
+  content: "";
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #2454e0;
+}
+
+.header-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.header-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #081421;
+  z-index: 3;
+}
+.header-container .header {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+.header-container .header .header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: relative;
+}
+.header-container .header .header__content .header__content__logo svg {
+  width: auto;
+  height: 32px;
+  cursor: pointer;
+}
+.header-container .header .header__content .header__content__navigation {
+  position: relative;
+  right: 6%;
+  z-index: 3;
+  margin: 0px -70px;
+}
+.header-container .header .header__content .header__content__navigation ul {
+  display: flex;
+  gap: 60px;
+}
+.header-container .header .header__content .header__content__navigation ul li {
+  height: 80px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  position: relative;
+  cursor: pointer;
+}
+.header-container .header .header__content .header__content__navigation ul li .navigation__item {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.header-container .header .header__content .header__content__navigation ul li:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=menu.css.map */

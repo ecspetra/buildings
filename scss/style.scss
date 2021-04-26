@@ -43,8 +43,9 @@ body {
   user-select: none;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -98,6 +99,7 @@ select {
   font-weight: 900;
 }
 
+@import "menu.scss";
 @import "hero.scss";
 @import "advantages.scss";
 @import "about-company.scss";
