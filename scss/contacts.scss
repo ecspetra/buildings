@@ -11,6 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
     background-color: white;
     border-radius: 4px;
     z-index: 2;
@@ -21,7 +22,6 @@
     .contacts__img {
       position: relative;
       background-image: url("../img/contacts-img.jpg");
-
       background-size: cover;
       background-position: center;
       flex: 0 0 460px;

@@ -3,8 +3,8 @@
 .projects-container {
   background-image: linear-gradient(
       to right,
-      rgba(1, 24, 89, 1) 0%,
-      rgba(1, 24, 89, 0.8) 100%
+      rgba(1, 24, 89, 0.9) 0%,
+      rgba(1, 24, 89, 1) 100%
     ),
     url("../img/projects-bg.jpg");
 
@@ -24,7 +24,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 80px;
 
     .projects__description {
       flex: 1 1 400px;

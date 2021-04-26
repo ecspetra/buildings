@@ -202,12 +202,12 @@ select {
   text-align: center;
 }
 .hero-container .hero-slide-1 {
-  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.8) 100%), url("../img/hero-bg-1.jpg");
+  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.9) 100%), url("../img/hero-bg-1.jpg");
   background-size: cover;
   background-position: center;
 }
 .hero-container .hero-slide-2 {
-  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.8) 100%), url("../img/hero-bg-2.jpg");
+  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.9) 100%), url("../img/hero-bg-2.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -390,6 +390,7 @@ select {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 80px;
   position: relative;
 }
@@ -430,7 +431,7 @@ select {
 }
 
 .projects-container {
-  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.8) 100%), url("../img/projects-bg.jpg");
+  background-image: linear-gradient(to right, rgba(1, 24, 89, 0.9) 0%, #011859 100%), url("../img/projects-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -447,7 +448,8 @@ select {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  gap: 80px;
 }
 .projects-container .projects .projects__description {
   flex: 1 1 400px;
@@ -612,6 +614,7 @@ select {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   background-color: white;
   border-radius: 4px;
   z-index: 2;
@@ -683,7 +686,7 @@ select {
 }
 
 .footer-container {
-  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.8) 100%), url("../img/projects-bg.jpg");
+  background-image: linear-gradient(to right, #011859 0%, rgba(1, 24, 89, 0.95) 100%), url("../img/footer-bg.jpg");
   background-size: cover;
   background-position: center;
   max-width: 100%;
@@ -721,6 +724,7 @@ select {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer-container .footer .footer__additional-info .footer__additional-info__author {
   flex: 1 1 300px;

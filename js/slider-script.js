@@ -10,7 +10,7 @@ $(document).ready(function () {
     dotsClass: "hero-dots",
   });
   $(".gallery__slider").slick({
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,

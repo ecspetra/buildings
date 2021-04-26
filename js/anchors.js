@@ -61,7 +61,7 @@ $(function () {
 });
 
 $(function () {
-  $("#home").on("click", function (e) {
+  $("#home-logo").on("click", function (e) {
     $("html,body")
       .stop()
       .animate({ scrollTop: $(".hero-container").offset().top }, 1000);
