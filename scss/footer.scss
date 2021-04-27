@@ -15,6 +15,15 @@
   padding: 100px 40px 30px 40px;
 
   .footer {
+    position: relative;
+    .footer__anchor {
+      position: absolute;
+      background: none;
+      width: 10px;
+      height: 10px;
+      top: -400px;
+      left: 0;
+    }
     max-width: 1280px;
     margin: 0 auto;
     padding: 0px 40px;
@@ -92,5 +101,123 @@
 .social-item:hover a {
   i {
     opacity: 1 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 50px 0px 15px 0px;
+
+    .footer {
+      max-width: 1024px;
+      .footer__anchor {
+        top: -400px;
+      }
+      .footer__content {
+        padding: 0px 0px 60px 0px;
+        .footer__content__headline {
+          span {
+          }
+        }
+        .footer__content__paragraph {
+          margin: 20px 0px 50px 0px;
+          font-size: $biggest-paragraph-fs-media-1024;
+          max-width: 600px;
+        }
+      }
+      .footer__additional-info {
+        margin: 15px 0px 0px 0px;
+
+        .footer__additional-info__author {
+        }
+        .footer__additional-info__logo {
+          svg {
+            width: auto;
+            height: 28px;
+            flex: 1 1 300px;
+          }
+        }
+        .footer__additional-info__social-icons {
+          flex: 1 1 300px;
+          gap: 30px;
+
+          .social-item {
+            a {
+              i {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .social-item:hover a {
+    i {
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 40px 0px;
+
+    .footer {
+      max-width: 768px;
+      padding: 0px 15px;
+      .footer__anchor {
+        top: -400px;
+      }
+      .footer__content {
+        padding: 0px 0px 50px 0px;
+        .footer__content__headline {
+          span {
+          }
+        }
+        .footer__content__paragraph {
+          margin: 20px 0px 40px 0px;
+          font-size: $biggest-paragraph-fs-media-mob;
+          max-width: 400px;
+        }
+      }
+      .footer__additional-info {
+        margin: 40px 0px 0px 0px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        .footer__additional-info__author {
+          margin: 30px 0px 0px 0px;
+          flex: 1 1 auto;
+          order: 2;
+        }
+        .footer__additional-info__logo {
+          order: 0;
+          svg {
+            width: auto;
+            height: 40px;
+            flex: 1 1 auto;
+          }
+        }
+        .footer__additional-info__social-icons {
+          order: 1;
+          flex: 1 1 auto;
+          gap: 30px;
+
+          .social-item {
+            a {
+              i {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .social-item:hover a {
+    i {
+    }
   }
 }

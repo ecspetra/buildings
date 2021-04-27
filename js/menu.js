@@ -7,3 +7,12 @@ $(window).scroll(function () {
     $(".header-container").removeClass("darkHeader");
   }
 });
+
+$(document).ready(function () {
+  $(".header__content__burger").click(function (event) {
+    $(".header__content__burger, .header__content__navigation").toggleClass(
+      "active-burger"
+    );
+    $("body").toggleClass("lock");
+  });
+});

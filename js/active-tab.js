@@ -1,22 +1,56 @@
-$(document).ready(function () {
-  var elm = document.querySelector(".header__content__navigation");
-  var ms = new MenuSpy(elm, {
-    // menu selector
-    menuItemSelector: 'a[href^="#"]',
+jQuery(document).ready(function (jQuery) {
+  var topMenu = jQuery("#navbar"),
+    offset = 40,
+    topMenuHeight = topMenu.outerHeight() + offset,
+    // All list items
+    menuItems = topMenu.find('a[href*="#"]'),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function () {
+      var href = jQuery(this).attr("href"),
+        id = href.substring(href.indexOf("#")),
+        item = jQuery(id);
+      //console.log(item)
+      if (item.length) {
+        return item;
+      }
+    });
 
-    // CSS class for active item
-    activeClass: "active",
+  // so we can get a fancy scroll animation
+  menuItems.click(function (e) {
+    var href = jQuery(this).attr("href"),
+      id = href.substring(href.indexOf("#"));
+    offsetTop = href === "#" ? 0 : jQuery(id).offset().top - topMenuHeight + 1;
+    jQuery("html, body").stop().animate(
+      {
+        scrollTop: offsetTop,
+      },
+      300
+    );
+    e.preventDefault();
+  });
 
-    // amount of space between your menu and the next section to be activated.
-    threshold: 400,
+  // Bind to scroll
+  jQuery(window).scroll(function () {
+    // Get container scroll position
+    var fromTop = jQuery(this).scrollTop() + topMenuHeight;
 
-    // enable or disable browser's hash location change.
-    enableLocationHash: true,
+    // Get id of current scroll item
+    var cur = scrollItems.map(function () {
+      if (jQuery(this).offset().top < fromTop) return this;
+    });
 
-    // timeout to apply browser's hash location.
-    hashTimeout: 600,
+    // Get the id of the current element
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "";
 
-    // called every time a new menu item activates.
-    callback: null,
+    menuItems.parent().removeClass("active-tab");
+    if (id) {
+      menuItems
+        .parent()
+        .end()
+        .filter("[href*='#" + id + "']")
+        .parent()
+        .addClass("active-tab");
+    }
   });
 });

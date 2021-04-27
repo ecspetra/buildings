@@ -3,7 +3,7 @@
 .contacts-container {
   position: relative;
   height: 300px;
-  margin: 200px auto 0px auto;
+  margin: 0px auto;
   .contacts {
     position: absolute;
     top: -180px;
@@ -87,6 +87,140 @@
       }
       input:focus {
         border: 2px solid $basic-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacts-container {
+    height: 300px;
+    margin: 0px auto;
+    .contacts {
+      top: -40px;
+
+      .contacts__img {
+        flex: 0 0 360px;
+        height: 560px;
+
+        .contacts__adress {
+          bottom: 20px;
+          right: 0px;
+          padding: 4px 10px;
+          font-size: $paragraph-fs-media-1024;
+
+          i {
+          }
+        }
+      }
+
+      .contacts__form-block {
+        padding: 0px 50px;
+
+        .contacts__form-block__headline {
+          span {
+          }
+        }
+        .divider {
+          margin: 40px 0px 40px 0px;
+        }
+
+        label {
+          font-size: $paragraph-fs-media-1024;
+        }
+
+        input {
+          padding: 10px;
+          margin: 10px 0px 25px 0px;
+        }
+        input[type="name"] {
+          background: url("../img/user-profile.png");
+          background-position: 98% 50%;
+          background-repeat: no-repeat;
+        }
+        input[type="email"] {
+          background: url("../img/arroba.png");
+          background-position: 98% 50%;
+          background-repeat: no-repeat;
+        }
+        input:focus {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-container {
+    max-width: 100%;
+    margin: 40px auto 0px auto;
+    padding: 50px 15px;
+    position: static;
+    height: auto;
+    background: linear-gradient(
+      to right,
+      rgba(1, 24, 89, 1) 0%,
+      rgba(1, 24, 89, 0.95) 100%
+    );
+
+    .contacts {
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      padding: 0px 0px 50px 0px;
+      box-shadow: none;
+      position: static;
+
+      .contacts__img {
+        width: 100%;
+        flex: 1 1 auto;
+        height: 260px;
+        border-radius: 4px 4px 0px 0px;
+
+        .contacts__adress {
+          left: 0px;
+          right: 0px;
+          bottom: 0;
+          padding: 4px 10px;
+          font-size: $paragraph-fs-media-mob;
+          text-align: center;
+          i {
+          }
+        }
+      }
+
+      .contacts__form-block {
+        padding: 0px 20px;
+
+        .contacts__form-block__headline {
+          text-align: center;
+          span {
+          }
+        }
+        .divider {
+          margin: 40px auto 15px auto;
+        }
+
+        label {
+          font-size: $paragraph-fs-media-mob;
+        }
+
+        input {
+          padding: 10px;
+          margin: 10px 0px 25px 0px;
+        }
+        input[type="name"] {
+          background: url("../img/user-profile.png");
+          background-position: 98% 50%;
+          background-repeat: no-repeat;
+        }
+        input[type="email"] {
+          background: url("../img/arroba.png");
+          background-position: 98% 50%;
+          background-repeat: no-repeat;
+        }
+        input:focus {
+        }
       }
     }
   }

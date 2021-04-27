@@ -55,7 +55,7 @@ $(function () {
   $("#section-6").on("click", function (e) {
     $("html,body")
       .stop()
-      .animate({ scrollTop: $(".footer-container").offset().top }, 1000);
+      .animate({ scrollTop: $(".footer__container").offset().top }, 1000);
     e.preventDefault();
   });
 });

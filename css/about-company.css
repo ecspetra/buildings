@@ -6,7 +6,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
   flex-wrap: wrap;
   gap: 80px;
   position: relative;
@@ -51,6 +50,7 @@
   .about-company-container .about-company {
     gap: 70px;
     position: relative;
+    flex-wrap: nowrap;
   }
   .about-company-container .about-company .about-company__image-1 {
     width: 400px;
@@ -70,6 +70,40 @@
   .about-company-container .about-company .about-company__description .about-company__description__headline {
     margin: 0px 0px 25px 0px;
     max-width: 300px;
+  }
+  .about-company-container .about-company .about-company__description .about-company__description__paragraph {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .about-company-container {
+    max-width: 768px;
+  }
+  .about-company-container .about-company {
+    gap: 40px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .about-company-container .about-company .about-company__image-1 {
+    width: 290px;
+    height: 200px;
+    flex: 1 1 290px;
+  }
+  .about-company-container .about-company .about-company__image-2 {
+    width: 200px;
+    height: 160px;
+    top: 100px;
+    left: 220px;
+    flex: 1 1 400px;
+  }
+  .about-company-container .about-company .about-company__description {
+    flex: 1 1 auto;
+  }
+  .about-company-container .about-company .about-company__description .about-company__description__headline {
+    margin: 0px 0px 25px 0px;
+    max-width: 768px;
   }
   .about-company-container .about-company .about-company__description .about-company__description__paragraph {
     font-size: 16px;

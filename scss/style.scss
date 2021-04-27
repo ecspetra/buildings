@@ -83,6 +83,11 @@ select {
   }
 }
 
+html.lock,
+body.lock {
+  overflow: hidden;
+}
+
 .wrapper {
   width: 100%;
 }
@@ -111,6 +116,21 @@ select {
   .headline {
     font-size: $biggest-headline-fs-media-1024;
     line-height: $biggest-headline-lh-media-1024;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+  }
+
+  .wrapper__container {
+    max-width: 768px;
+    padding: 40px 15px;
+  }
+
+  .headline {
+    font-size: $biggest-headline-fs-media-mob;
+    line-height: $biggest-headline-lh-media-mob;
   }
 }
 
