@@ -290,12 +290,12 @@ body.lock {
     position: fixed;
     top: -100%;
     left: 0;
-    width: 80%;
+    width: 88%;
     height: 100%;
     background-color: #081421;
   }
   .header-container .header .header__content .header__content__navigation ul {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -303,9 +303,13 @@ body.lock {
   }
   .header-container .header .header__content .header__content__navigation ul li {
     height: 60px;
+    align-items: center;
   }
   .header-container .header .header__content .header__content__navigation ul li .navigation__item {
+    display: flex;
     align-items: center;
+    width: 100%;
+    height: 60px;
   }
   .header-container .header .header__content .header__content__navigation.active-burger {
     top: 0;
