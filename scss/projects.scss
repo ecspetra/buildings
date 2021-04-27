@@ -57,3 +57,39 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .projects-container {
+    .projects {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0px 40px;
+      gap: 70px;
+
+      .projects__description {
+        flex: 1 1 300px;
+        max-width: 400px;
+        .projects__description__paragraph {
+          color: white;
+          font-size: $paragraph-fs-media-1024;
+
+          i {
+            font-size: 18px;
+            margin: 0px 10px 0px 0px;
+          }
+        }
+        .projects__description__headline {
+          margin: 20px 0px 50px 0px;
+
+          span {
+          }
+        }
+      }
+      .projects__img {
+        width: 425px;
+        height: 500px;
+        flex: 0 0 425px;
+      }
+    }
+  }
+}

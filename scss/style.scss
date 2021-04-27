@@ -99,6 +99,21 @@ select {
   font-weight: 900;
 }
 
+@media (max-width: 1024px) {
+  .wrapper {
+  }
+
+  .wrapper__container {
+    max-width: 1024px;
+    padding: 60px 40px;
+  }
+
+  .headline {
+    font-size: $biggest-headline-fs-media-1024;
+    line-height: $biggest-headline-lh-media-1024;
+  }
+}
+
 @import "menu.scss";
 @import "hero.scss";
 @import "advantages.scss";

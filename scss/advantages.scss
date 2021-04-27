@@ -83,3 +83,57 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .advantages-container {
+    padding: 50px 40px 0px 40px;
+
+    .advantages__headline {
+      margin: 0px 0px 60px 0px;
+      .headline {
+        margin: 0px 0px 20px 0px;
+
+        span {
+        }
+      }
+      .description {
+        font-size: $biggest-paragraph-fs-media-1024;
+      }
+      .divider {
+        margin: 50px 0px 0px 0px;
+      }
+    }
+    .advantages-items {
+      .advantages__item {
+        flex: 1 1 26%;
+        padding: 20px;
+        border-radius: 4px;
+
+        .advantages__item__icon {
+          width: 40px;
+          height: 40px;
+
+          svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .advantages__item__headline {
+          font-size: $headline-fs-media-1024;
+          margin: 15px 0px 10px 0px;
+        }
+        .advantages__item__description {
+          color: $paragraph;
+          font-size: $paragraph-fs-media-1024;
+        }
+
+        &:hover {
+          .advantages__item__description {
+          }
+        }
+      }
+      .advantages__item:hover .advantages__item__icon > svg * {
+      }
+    }
+  }
+}

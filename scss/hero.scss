@@ -140,3 +140,56 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .hero-container {
+    .hero-slide-1 {
+    }
+    .hero-slide-2 {
+    }
+    .hero-slide-3 {
+    }
+
+    .hero-slider {
+      .slick-list {
+        .slick-track {
+          .slick-slide {
+            height: 600px;
+
+            .slide-content {
+              max-width: 500px;
+
+              h1 {
+                font-size: 40px;
+                line-height: 42px;
+
+                span {
+                }
+              }
+
+              .paragraph {
+                font-size: $biggest-paragraph-fs-media-1024;
+                line-height: 32px;
+                margin: 20px auto 50px auto;
+              }
+
+              .cta-button {
+              }
+            }
+          }
+        }
+      }
+      .hero-dots {
+        top: 80%;
+        li {
+          button {
+          }
+        }
+        .slick-active {
+          button {
+          }
+        }
+      }
+    }
+  }
+}

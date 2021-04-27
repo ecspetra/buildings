@@ -46,4 +46,33 @@
   flex: 0 0 520px;
 }
 
+@media (max-width: 1024px) {
+  .projects-container .projects {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px 40px;
+    gap: 70px;
+  }
+  .projects-container .projects .projects__description {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+  .projects-container .projects .projects__description .projects__description__paragraph {
+    color: white;
+    font-size: 16px;
+  }
+  .projects-container .projects .projects__description .projects__description__paragraph i {
+    font-size: 18px;
+    margin: 0px 10px 0px 0px;
+  }
+  .projects-container .projects .projects__description .projects__description__headline {
+    margin: 20px 0px 50px 0px;
+  }
+  .projects-container .projects .projects__img {
+    width: 425px;
+    height: 500px;
+    flex: 0 0 425px;
+  }
+}
+
 /*# sourceMappingURL=projects.css.map */

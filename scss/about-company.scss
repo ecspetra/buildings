@@ -53,3 +53,38 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .about-company-container {
+    .about-company {
+      gap: 70px;
+      position: relative;
+      .about-company__image-1 {
+        width: 400px;
+        height: 280px;
+        flex: 1 1 400px;
+      }
+      .about-company__image-2 {
+        width: 200px;
+        height: 160px;
+        top: 100px;
+        left: 220px;
+        flex: 1 1 400px;
+      }
+
+      .about-company__description {
+        flex: 1 1 400px;
+        .about-company__description__headline {
+          margin: 0px 0px 25px 0px;
+          max-width: 300px;
+
+          span {
+          }
+        }
+        .about-company__description__paragraph {
+          font-size: $paragraph-fs-media-1024;
+        }
+      }
+    }
+  }
+}
