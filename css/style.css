@@ -840,6 +840,7 @@ body.lock {
     background-image: url("../img/about-company-img-1.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     border-radius: 4px;
     position: relative;
   }
@@ -850,6 +851,7 @@ body.lock {
     background-image: url("../img/about-company-img-2.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     bottom: -20px;
     left: 20px;
     border-radius: 4px;
@@ -1765,7 +1767,7 @@ body.lock {
 
   .more-info:hover a {
     color: #081421;
-    margin: 0px 0px 0px 20px;
+    margin: 0px;
   }
   .more-info:hover a i {
     color: #081421;
