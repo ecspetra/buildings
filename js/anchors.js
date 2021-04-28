@@ -1,70 +1,33 @@
-$(function () {
-  $(".contact-button").on("click", function (e) {
-    $("html,body")
-      .stop()
-      .animate({ scrollTop: $(".contacts-container").offset().top }, 1000);
-    e.preventDefault();
-  });
-});
-
-$(function () {
-  $("#section-1").on("click", function (e) {
-    $("html,body")
-      .stop()
-      .animate({ scrollTop: $(".advantages-container").offset().top }, 1000);
-    e.preventDefault();
-  });
-});
-
-$(function () {
-  $("#section-2").on("click", function (e) {
-    $("html,body")
-      .stop()
-      .animate({ scrollTop: $(".about-company-container").offset().top }, 1000);
-    e.preventDefault();
-  });
-});
-$(function () {
-  $("#section-3").on("click", function (e) {
-    $("html,body")
-      .stop()
-      .animate({ scrollTop: $(".projects-container").offset().top }, 1000);
-    e.preventDefault();
-  });
-});
-
-$(function () {
-  $("#section-4").on("click", function (e) {
-    $("html,body")
-      .stop()
-      .animate({ scrollTop: $(".gallery-container").offset().top }, 1000);
-    e.preventDefault();
-  });
-});
-
-$(function () {
-  $("#section-5").on("click", function (e) {
-    $("html,body")
-      .stop()
-      .animate({ scrollTop: $(".contacts-container").offset().top }, 1000);
-    e.preventDefault();
-  });
-});
-
-$(function () {
-  $("#section-6").on("click", function (e) {
-    $("html,body")
-      .stop()
-      .animate({ scrollTop: $(".footer__container").offset().top }, 1000);
-    e.preventDefault();
-  });
-});
-
-$(function () {
-  $("#home-logo").on("click", function (e) {
-    $("html,body")
-      .stop()
-      .animate({ scrollTop: $(".hero-container").offset().top }, 1000);
-    e.preventDefault();
-  });
+$(document).ready(function () {
+  var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+    V = 0.3; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+  for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener(
+      "click",
+      function (e) {
+        //по клику на ссылку
+        e.preventDefault(); //отменяем стандартное поведение
+        var w = window.pageYOffset, // производим прокрутка прокрутка
+          hash = this.href.replace(/[^#]*(.*)/, "$1"); // к id элемента, к которому нужно перейти
+        (t = document.querySelector(hash).getBoundingClientRect().top), // отступ от окна браузера до id
+          (start = null);
+        requestAnimationFrame(step); // подробнее про функцию анимации [developer.mozilla.org]
+        function step(time) {
+          if (start === null) start = time;
+          var progress = time - start,
+            r =
+              t < 0
+                ? Math.max(w - progress / V, w + t)
+                : Math.min(w + progress / V, w + t);
+          window.scrollTo(0, r);
+          if (r != w + t) {
+            requestAnimationFrame(step);
+          } else {
+            location.hash = hash; // URL с хэшем
+          }
+        }
+      },
+      false
+    );
+  }
 });
