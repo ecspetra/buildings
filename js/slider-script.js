@@ -10,7 +10,7 @@ $(document).ready(function () {
     dotsClass: "hero-dots",
   });
   $(".gallery__slider").slick({
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
@@ -21,6 +21,13 @@ $(document).ready(function () {
     dotsClass: "gallery-dots",
     focusOnSelect: true,
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 768,
         settings: {

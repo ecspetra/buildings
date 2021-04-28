@@ -129,16 +129,17 @@
         margin: 15px 0px 0px 0px;
 
         .footer__additional-info__author {
+          flex: 1 1 200px;
         }
         .footer__additional-info__logo {
           svg {
             width: auto;
             height: 28px;
-            flex: 1 1 300px;
+            flex: 1 1 200px;
           }
         }
         .footer__additional-info__social-icons {
-          flex: 1 1 300px;
+          flex: 1 1 200px;
           gap: 30px;
 
           .social-item {

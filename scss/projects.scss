@@ -15,7 +15,6 @@
   padding: 0;
   margin: 0;
   color: white;
-
   .projects {
     max-width: 1280px;
     margin: 0 auto;
@@ -24,7 +23,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 80px;
 
     .projects__description {
@@ -49,11 +48,48 @@
     }
     .projects__img {
       background-image: url("../img/projects-img.jpg");
-      width: 520px;
+      width: 420px;
       background-size: cover;
       background-position: center;
-      height: 800px;
+      height: 760px;
       flex: 0 0 520px;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .projects-container {
+    .projects {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0px 40px;
+      gap: 70px;
+      flex-wrap: nowrap;
+
+      .projects__description {
+        flex: 1 1 400px;
+        max-width: 400px;
+        .projects__description__paragraph {
+          color: white;
+          font-size: $paragraph-fs;
+
+          i {
+            font-size: 18px;
+            margin: 0px 10px 0px 0px;
+          }
+        }
+        .projects__description__headline {
+          margin: 20px 0px 50px 0px;
+
+          span {
+          }
+        }
+      }
+      .projects__img {
+        width: 450px;
+        height: 520px;
+        flex: 0 0 450px;
+      }
     }
   }
 }
@@ -70,6 +106,7 @@
       .projects__description {
         flex: 1 1 400px;
         max-width: 400px;
+        min-width: 250px;
         .projects__description__paragraph {
           color: white;
           font-size: $paragraph-fs-media-1024;
@@ -89,7 +126,7 @@
       .projects__img {
         width: 350px;
         height: 500px;
-        flex: 0 0 425px;
+        flex: 1 1 425px;
       }
     }
   }
@@ -100,13 +137,14 @@
     .projects {
       max-width: 768px;
       margin: 0 auto;
-      padding: 50px 15px;
+      padding: 0px 0px 50px 0px;
       gap: 50px;
       justify-content: center;
       text-align: center;
       flex-wrap: wrap;
 
       .projects__description {
+        padding: 0px 15px;
         flex: 1 1 auto;
         order: 1;
         max-width: 400px;
@@ -128,9 +166,9 @@
       }
       .projects__img {
         order: 0;
-        width: 290px;
-        height: 300px;
-        flex: 0 0 290px;
+        width: auto;
+        height: 240px;
+        flex: 0 0 100%;
       }
     }
   }

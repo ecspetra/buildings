@@ -96,6 +96,27 @@
   opacity: 1;
 }
 
+@media (max-width: 1024px) {
+  .header-container .header {
+    max-width: 1024px;
+  }
+  .header-container .header .header__content {
+    height: 60px;
+  }
+  .header-container .header .header__content .header__content__logo svg {
+    width: auto;
+    height: 24px;
+  }
+  .header-container .header .header__content .header__content__navigation ul {
+    gap: 30px;
+  }
+  .header-container .header .header__content .header__content__navigation ul li {
+    height: 60px;
+  }
+  .header-container .header .header__content .header__content__navigation ul li .navigation__item {
+    font-size: 14px;
+  }
+}
 @media (max-width: 768px) {
   .header-container {
     max-width: 768px;

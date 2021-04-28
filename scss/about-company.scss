@@ -7,11 +7,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 80px;
     position: relative;
     .about-company__image-1 {
       width: 600px;
+      max-width: 600px;
       height: 400px;
       background-image: url("../img/about-company-img-1.jpg");
 
@@ -34,6 +35,12 @@
       flex: 1 1 600px;
       border-radius: 4px;
     }
+    .about-company__image-1-mob {
+      display: none;
+      .about-company__image-2-mob {
+        display: none;
+      }
+    }
 
     .about-company__description {
       flex: 1 1 400px;
@@ -53,6 +60,49 @@
   }
 }
 
+@media (max-width: 1170px) {
+  .about-company-container {
+    .about-company {
+      gap: 70px;
+      position: relative;
+      flex-wrap: nowrap;
+      .about-company__image-1 {
+        width: 500px;
+        max-width: 500px;
+        height: 380px;
+        flex: 1 1 500px;
+      }
+      .about-company__image-2 {
+        width: 260px;
+        height: 190px;
+        top: 160px;
+        left: 260px;
+        flex: 1 1 400px;
+      }
+      .about-company__image-1-mob {
+        display: none;
+        .about-company__image-2-mob {
+          display: none;
+        }
+      }
+
+      .about-company__description {
+        flex: 1 1 400px;
+        .about-company__description__headline {
+          margin: 0px 0px 25px 0px;
+          max-width: 300px;
+
+          span {
+          }
+        }
+        .about-company__description__paragraph {
+          font-size: $paragraph-fs;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .about-company-container {
     .about-company {
@@ -61,6 +111,7 @@
       flex-wrap: nowrap;
       .about-company__image-1 {
         width: 400px;
+        max-width: 400px;
         height: 280px;
         flex: 1 1 400px;
       }
@@ -70,6 +121,12 @@
         top: 100px;
         left: 220px;
         flex: 1 1 400px;
+      }
+      .about-company__image-1-mob {
+        display: none;
+        .about-company__image-2-mob {
+          display: none;
+        }
       }
 
       .about-company__description {
@@ -99,16 +156,33 @@
       text-align: center;
       flex-wrap: wrap;
       .about-company__image-1 {
-        width: 290px;
-        height: 200px;
-        flex: 1 1 290px;
+        display: none;
       }
       .about-company__image-2 {
-        width: 200px;
-        height: 160px;
-        top: 100px;
-        left: 220px;
-        flex: 1 1 400px;
+        display: none;
+      }
+      .about-company__image-1-mob {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        height: 260px;
+        background-image: url("../img/about-company-img-1.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 4px;
+        position: relative;
+        .about-company__image-2-mob {
+          display: block;
+          width: 160px;
+          height: 120px;
+          background-image: url("../img/about-company-img-2.jpg");
+          background-size: cover;
+          background-position: center;
+          bottom: -20px;
+          left: 20px;
+          border-radius: 4px;
+          position: absolute;
+        }
       }
 
       .about-company__description {

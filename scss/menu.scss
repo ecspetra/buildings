@@ -114,6 +114,47 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .header-container {
+    &:before {
+    }
+    .header {
+      max-width: 1024px;
+      .header__content {
+        height: 60px;
+
+        .header__content__logo {
+          svg {
+            width: auto;
+            height: 24px;
+          }
+        }
+
+        .header__content__burger {
+          // display: none;
+        }
+
+        .header__content__navigation {
+          ul {
+            gap: 30px;
+
+            li {
+              height: 60px;
+
+              .navigation__item {
+                font-size: $button-fs-media-1024;
+              }
+
+              &:hover {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .header-container {
     max-width: 768px;

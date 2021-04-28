@@ -129,11 +129,12 @@
 }
 @media (max-width: 768px) {
   .hero-container .hero-slider .slick-list .slick-track .slick-slide {
-    height: 480px;
+    height: 510px;
   }
   .hero-container .hero-slider .slick-list .slick-track .slick-slide .slide-content {
+    padding: 0px 15px;
     max-width: 400px;
-    margin: 10px 0px 0px 0px;
+    margin: -30px 0px 0px 0px;
   }
   .hero-container .hero-slider .slick-list .slick-track .slick-slide .slide-content h1 {
     font-size: 30px;
@@ -145,7 +146,7 @@
     margin: 20px auto 40px auto;
   }
   .hero-container .hero-slider .hero-dots {
-    top: 84%;
+    top: 87%;
   }
   .hero-container .hero-slider .hero-dots li {
     margin: 10px;
