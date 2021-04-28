@@ -470,7 +470,7 @@ body.lock {
     height: 510px;
   }
   .hero-container .hero-slider .slick-list .slick-track .slick-slide .slide-content {
-    padding: 0px 15px;
+    padding: 0px 25px;
     max-width: 400px;
     margin: -30px 0px 0px 0px;
   }
